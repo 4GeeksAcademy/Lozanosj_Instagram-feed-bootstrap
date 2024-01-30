@@ -29,9 +29,47 @@
           </div>
 
           <form class="d-flex" role="search">
-            <button class="btn btn-success" type="submit">
-              Create a new post
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Create new post
             </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="mb-3">
+                      <label for="exampleFormControlTextarea1" class="form-label">Caption:</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Add the caption of your post here"></textarea>
+                    </div>
+                    
+                    <div class="d-flex">
+                      <div class="btn-group pe-2" role="group" aria-label="Third group">
+                        <button type="button" class="btn btn-light">
+                          <i class="fa-solid fa-camera"></i>
+                        </button>
+                      </div>
+                      <div class="btn-group" role="group" aria-label="Third group">
+                        <button type="button" class="btn btn-light">
+                          <i class="fa-solid fa-location-dot"></i>
+                        </button>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Publish</button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
 
             <!-- Boton Dropdown -->
             <div class="btn-group ms-2">
@@ -58,7 +96,7 @@
         </nav>
       </div>
 
-      <!-- Tab cambio de grilla-->
+      <!-- Tab cambio de vista-->
 
       <!-- Vista de grilla -->
 
@@ -104,9 +142,20 @@
             id="home-tab-pane"
             role="tabpanel"
             aria-labelledby="home-tab"
-            tabindex="0"
-          >
-            Ejemplo 1
+            tabindex="0">
+
+            <div class="row p-4 g-2">
+              <div class="col-4"> <img class="w-100" src="https://picsum.photos/id/69/200"></div>
+              <div class="col-4"> <img class="w-100" src="https://picsum.photos/id/96/200"></div>
+              <div class="col-4"> <img class="w-100" src="https://picsum.photos/id/15/200"></div>
+              <div class="col-4"> <img class="w-100" src="https://picsum.photos/id/19/200"></div>
+              <div class="col-4"> <img class="w-100" src="https://picsum.photos/id/11/200"></div>
+              <div class="col-4"> <img class="w-100" src="https://picsum.photos/id/54/200"></div>
+              <div class="col-4"> <img class="w-100" src="https://picsum.photos/id/25/200"></div>
+              <div class="col-4"> <img class="w-100" src="https://picsum.photos/id/39/200"></div>
+              <div class="col-4"> <img class="w-100" src="https://picsum.photos/id/20/200"></div>
+            </div>
+
           </div>
 
           <!-- Contenido de Feed -->
@@ -115,9 +164,178 @@
             id="profile-tab-pane"
             role="tabpanel"
             aria-labelledby="profile-tab"
-            tabindex="0"
-          >
-            Ejemplo 2 
+            tabindex="0">
+
+            <!-- foto 1 -->
+
+            <div class="card mx-auto my-4 col-6">
+              <ul class="list-group list-group-flush">
+                <li class="titulo list-group-item d-flex">
+                  <h3>Going for a run</h3>
+                  <p class="text-secondary">30/01</p>
+                </li>
+                <li class="list-group-item p-0">
+                  <div class=""> <img class="w-100" src="https://picsum.photos/id/69/200/150"></div>
+                </li>
+                <li class="list-group-item"><span class="pb-2">
+                  <strong>6500 likes</strong></span>
+                </br>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis recusandae aut non velit beatae quia quibusdam. Veritatis doloribus vel laudantium nostrum, tempora deserunt reprehenderit minus ipsum incidunt nam numquam cum</p>
+                </li>
+              </ul>
+            </div>
+
+            <!-- foto 2 -->
+
+            <div class="card mx-auto my-4 col-6">
+              <ul class="list-group list-group-flush">
+                <li class="titulo list-group-item d-flex">
+                  <h3>Videogame night</h3>
+                  <p class="text-secondary">23/09</p>
+                </li>
+                <li class="list-group-item p-0">
+                  <div class=""> <img class="w-100" src="https://picsum.photos/id/96/200/150"></div>
+                </li>
+                <li class="list-group-item">
+                  <span class="pb-2"><strong>1500 likes</strong></span>
+                </br>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis recusandae aut non velit beatae quia quibusdam. Veritatis doloribus vel laudantium nostrum, tempora deserunt reprehenderit minus ipsum incidunt nam numquam cum</p>
+                </li>
+              </ul>
+            </div>
+
+            <!-- foto 3 -->
+
+            <div class="card mx-auto my-4 col-6">
+              <ul class="list-group list-group-flush">
+                <li class="titulo list-group-item d-flex">
+                  <h3>Grounding</h3>
+                  <p class="text-secondary">22/09</p>
+                </li>
+                <li class="list-group-item p-0">
+                  <div class=""> <img class="w-100" src="https://picsum.photos/id/15/200/150"></div>
+                </li>
+                <li class="list-group-item">
+                  <span class="pb-2"><strong>3700 likes</strong></span>
+                </br>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis recusandae aut non velit beatae quia quibusdam. Veritatis doloribus vel laudantium nostrum, tempora deserunt reprehenderit minus ipsum incidunt nam numquam cum</p>
+                </li>
+              </ul>
+            </div>
+
+            <!-- foto 4 -->
+
+            <div class="card mx-auto my-4 col-6">
+              <ul class="list-group list-group-flush">
+                <li class="titulo list-group-item d-flex">
+                  <h3>Grounding pt.2</h3>
+                  <p class="text-secondary">25/04</p>
+                </li>
+                <li class="list-group-item p-0">
+                  <div class=""> <img class="w-100" src="https://picsum.photos/id/19/200/150"></div>
+                </li>
+                <li class="list-group-item">
+                  <span class="pb-2"><strong>1000 likes</strong></span>
+                </br>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis recusandae aut non velit beatae quia quibusdam. Veritatis doloribus vel laudantium nostrum, tempora deserunt reprehenderit minus ipsum incidunt nam numquam cum</p>
+                </li>
+              </ul>
+            </div>
+
+            <!-- foto 5 -->
+
+            <div class="card mx-auto my-4 col-6">
+              <ul class="list-group list-group-flush">
+                <li class="titulo list-group-item d-flex">
+                  <h3>Somewhere in vzla</h3>
+                  <p class="text-secondary">31/12</p>
+                </li>
+                <li class="list-group-item p-0">
+                  <div class=""> <img class="w-100" src="https://picsum.photos/id/11/200/150"></div>
+                </li>
+                <li class="list-group-item">
+                  <span class="pb-2"><strong>2960 likes</strong></span>
+                </br>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis recusandae aut non velit beatae quia quibusdam. Veritatis doloribus vel laudantium nostrum, tempora deserunt reprehenderit minus ipsum incidunt nam numquam cum</p>
+                </li>
+              </ul>
+            </div>
+
+            <!-- foto 6 -->
+
+            <div class="card mx-auto my-4 col-6">
+              <ul class="list-group list-group-flush">
+                <li class="titulo list-group-item d-flex">
+                  <h3>Mérida</h3>
+                  <p class="text-secondary">28/03</p>
+                </li>
+                <li class="list-group-item p-0">
+                  <div class=""> <img class="w-100" src="https://picsum.photos/id/54/200/150"></div>
+                </li>
+                <li class="list-group-item">
+                  <span class="pb-2"><strong>1000 likes</strong></span>
+                </br>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis recusandae aut non velit beatae quia quibusdam. Veritatis doloribus vel laudantium nostrum, tempora deserunt reprehenderit minus ipsum incidunt nam numquam cum</p>
+                </li>
+              </ul>
+            </div>
+
+            <!-- foto 7 -->
+
+            <div class="card mx-auto my-4 col-6">
+              <ul class="list-group list-group-flush">
+                <li class="titulo list-group-item d-flex">
+                  <h3>A tree</h3>
+                  <p class="text-secondary">15/06</p>
+                </li>
+                <li class="list-group-item p-0">
+                  <div class=""> <img class="w-100" src="https://picsum.photos/id/25/200/150"></div>
+                </li>
+                <li class="list-group-item">
+                  <span class="pb-2"><strong>2654 likes</strong></span>
+                </br>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis recusandae aut non velit beatae quia quibusdam. Veritatis doloribus vel laudantium nostrum, tempora deserunt reprehenderit minus ipsum incidunt nam numquam cum</p>
+                </li>
+              </ul>
+            </div>
+
+            <!-- foto 8 -->
+
+            <div class="card mx-auto my-4 col-6">
+              <ul class="list-group list-group-flush">
+                <li class="titulo list-group-item d-flex">
+                  <h3>Musica ligera</h3>
+                  <p class="text-secondary">14/02</p>
+                </li>
+                <li class="list-group-item p-0">
+                  <div class=""> <img class="w-100" src="https://picsum.photos/id/39/200/150"></div>
+                </li>
+                <li class="list-group-item">
+                  <span class="pb-2"><strong>5001 likes</strong></span>
+                </br>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis recusandae aut non velit beatae quia quibusdam. Veritatis doloribus vel laudantium nostrum, tempora deserunt reprehenderit minus ipsum incidunt nam numquam cum</p>
+                </li>
+              </ul>
+            </div>
+
+            <!-- foto 9 -->
+
+            <div class="card mx-auto my-4 col-6">
+              <ul class="list-group list-group-flush">
+                <li class="titulo list-group-item d-flex">
+                  <h3>Time for work</h3>
+                  <p class="text-secondary">24/12</p>
+                </li>
+                <li class="list-group-item p-0">
+                  <div class=""> <img class="w-100" src="https://picsum.photos/id/20/200/150"></div>
+                </li>
+                <li class="list-group-item">
+                  <span class="pb-2"><strong>200 dislikes</strong></span>
+                </br>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis recusandae aut non velit beatae quia quibusdam. Veritatis doloribus vel laudantium nostrum, tempora deserunt reprehenderit minus ipsum incidunt nam numquam cum</p>
+                </li>
+              </ul>
+            </div>
           </div>
       </div>
     </div>
